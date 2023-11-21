@@ -1,0 +1,203 @@
+.home{
+    min-height: 160vh;
+    /* border: 1px solid black; */
+    margin-bottom: 50px;
+}
+
+.home-content{
+    min-height: 80vh;
+    /* border: 1px solid red; */
+    position: relative;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.home-content-right{
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 100px;
+}
+
+.home-quote{
+    height: 70vh;
+    /* border: 1px solid black; */
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.home-quote h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.home-content h5{
+    letter-spacing: 1px;
+}
+
+.home-content-left{
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    /* border: 1px solid black; */
+}
+
+.form-box{
+    width: 60%;
+    min-height: 80vh;
+    /* border: 1px solid black; */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.form-quote{
+    width: 50%;
+    /* border: 1px solid black; */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    word-spacing: .5px;
+    letter-spacing: .5px;
+    border-right: 1px solid gray;
+}
+
+.form-quote h1{
+    width: 70%;
+}
+
+form{
+    width: 50%;
+    /* border: 1px solid black; */
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.input-box{
+    padding: 10px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.button-box{
+    padding: 5px 40px;
+    background-color:#6CE070 ;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-limitedquote-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-limitedquote-div span{
+    font-size: 10px;
+    color: red;
+    margin-top: 10px;
+}
+
+
+@media (max-width:920px) {
+    .form-box{
+        /* display: none; */
+        width: 100%;
+        left: 0;
+    }
+}
+
+
+
+
+@media (max-width:840px) {
+    .home-quote h1{
+        /* display: none; */
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width:720px) {
+    .home-quote h1{
+        /* display: none; */
+        font-size: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    .home-content-left{
+        display: none;
+    }
+
+    .home-quote h5{
+        width: 90%;
+    }
+
+    .home-content-right{
+        width: 100%;
+    }
+
+    .home-quote{
+        /* margin-left:0  auto; */
+        margin-left: 30px;
+    }
+
+    .logo{
+        margin-left: 30px;
+    }
+
+    .form-box{
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .form-quote{
+        border:none;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .input-box{
+        width: 60%;
+    }
+
+    form{
+        width: 100%;
+        height: 40vh;
+
+    }
+}
